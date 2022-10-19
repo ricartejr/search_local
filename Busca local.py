@@ -1,6 +1,4 @@
-# *args(a, 'a') retorna uma tupla (value)
-# **kwargs(e='eeee') retorna um dicionario {'key': 'value'}
-from fun.func import copycopy
+from funciones.func import copycopy
 from os import path, walk
 
 
