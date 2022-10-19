@@ -17,7 +17,7 @@ if path.exists(buscar_en) == True:
                 try:
                     des_arq = path.abspath(f'{des_local}/{buscar_por}')
                     copy_arq = path.abspath(f'{camino}/{archivo}')
-                    # copycopy(copy_arq, des_arq, des_local, buscar_por, archivo)
+                    copycopy(copy_arq, des_arq, des_local, buscar_por, archivo)
                 except KeyboardInterrupt as error:
                     print('Cancelado por el usuario.')
                     break
