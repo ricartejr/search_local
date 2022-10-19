@@ -17,14 +17,15 @@ if path.exists(buscar_en) == True:
                 try:
                     des_arq = path.abspath(f'{des_local}/{buscar_por}')
                     copy_arq = path.abspath(f'{camino}/{archivo}')
-                    copycopy(copy_arq, des_arq, des_local, buscar_por, archivo)
+                    # copycopy(copy_arq, des_arq, des_local, buscar_por, archivo)
                 except KeyboardInterrupt as error:
                     print('Cancelado por el usuario.')
                     break
                 else:
                     print(f'{"":-<160}')
-                    print('Copiado ->', path.abspath(f'{camino}/{archivo}'))
-else:
-    print(f'\n-> {buscar_en} Invalido.\n')
+                    print('->', path.abspath(f'{camino}/{archivo}'))
 
-print(f'\n->[{contador}] - [{buscar_por}] encontrados.\n')
+else:
+    print(f'\n-> {buscar_en} Invalido.')
+
+print(f'\n-> [{contador}] - [{buscar_por}] encontrados.\n')
