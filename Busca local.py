@@ -24,7 +24,6 @@ if path.exists(buscar_en) == True:
                 else:
                     print(f'{"":-<160}')
                     print('->', path.abspath(f'{camino}/{archivo}'))
-
 else:
     print(f'\n-> {buscar_en} Invalido.')
 
